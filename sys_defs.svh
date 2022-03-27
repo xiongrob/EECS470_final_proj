@@ -609,6 +609,7 @@ typedef struct packed {
 
 typedef struct packed {
     logic   [`THREAD_NUM-1:0]                       valid       ;
+    logic   [`THREAD_NUM-1:0] [`XLEN-1:0]           target_pc   ;
 } BR_MIS; // Combined
 
 // Interface End
